@@ -18,7 +18,7 @@ t_end = time.time() + 17
 
 @bot.message_handler(commands=['Шрек_1'])
 def shrek_1_message(message):
-    with open('C:/Users/super/Documents/shrek_1.txt', encoding='utf-8') as f:
+    with open('shrek_1.txt', encoding='utf-8') as f:
         text = f.read()
         for line in text.splitlines():
             time.sleep(.13)
@@ -31,7 +31,7 @@ def shrek_1_message(message):
 
 @bot.message_handler(commands=['Шрек_2'])
 def shrek_2_message(message):
-    with open('C:/Users/super/Documents/shrek_2.txt', encoding='utf-8') as f:
+    with open('shrek_2.txt', encoding='utf-8') as f:
         text = f.read()
         for line in text.splitlines():
             time.sleep(.13)
@@ -44,7 +44,7 @@ def shrek_2_message(message):
 
 @bot.message_handler(commands=['Шрек_3'])
 def shrek_3_message(message):
-    with open('C:/Users/super/Documents/shrek_3.txt', encoding='utf-8') as f:
+    with open('shrek_3.txt', encoding='utf-8') as f:
         text = f.read()
         for line in text.splitlines():
             time.sleep(.13)
@@ -57,7 +57,7 @@ def shrek_3_message(message):
 
 @bot.message_handler(commands=['Шрек_4'])
 def shrek_4_message(message):
-    with open('C:/Users/super/Documents/shrek_4.txt', encoding='utf-8') as f:
+    with open('shrek_4.txt', encoding='utf-8') as f:
         text = f.read()
         for line in text.splitlines():
             time.sleep(.13)
