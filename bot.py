@@ -1,7 +1,10 @@
 import telebot
 import time
+import os
 
-bot = telebot.TeleBot('1604683875:AAEPAQ5nODdlfoDJnb5XscKEuBrMFO4gR2U')
+token = os.environ,get('TOKEN')
+
+bot = telebot.TeleBot(str(token))
 
 keyboard1 = telebot.types.ReplyKeyboardMarkup()
 keyboard1.row('/Шрек_1', '/Шрек_2', '/Шрек_3', '/Шрек_4')
@@ -16,7 +19,7 @@ def shrek_1_message(message):
     with open('shrek_1.txt', encoding='utf-8') as f:
         text = f.read()
         for line in text.splitlines():
-            time.sleep(.15)
+            time.sleep(.17)
             if(line == ''):
                 bot.send_message(message.chat.id, '_______________________________________________')
             else:
@@ -29,7 +32,7 @@ def shrek_2_message(message):
     with open('shrek_2.txt', encoding='utf-8') as f:
         text = f.read()
         for line in text.splitlines():
-            time.sleep(.15)
+            time.sleep(.17)
             if(line == ''):
                 bot.send_message(message.chat.id, '_______________________________________________')
             else:
@@ -42,7 +45,7 @@ def shrek_3_message(message):
     with open('shrek_3.txt', encoding='utf-8') as f:
         text = f.read()
         for line in text.splitlines():
-            time.sleep(.15)
+            time.sleep(.17)
             if(line == ''):
                 bot.send_message(message.chat.id, '_______________________________________________')
             else:
@@ -55,7 +58,7 @@ def shrek_4_message(message):
     with open('shrek_4.txt', encoding='utf-8') as f:
         text = f.read()
         for line in text.splitlines():
-            time.sleep(.15)
+            time.sleep(.17)
             if(line == ''):
                 bot.send_message(message.chat.id, '_______________________________________________')
             else:
