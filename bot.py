@@ -20,7 +20,7 @@ def shrek_1_message(message):
         text = f.read()
         for line in text.splitlines():
             time.sleep(.18)
-            if(line == '' or line == '\n'):
+            if(line == '' or line == '\n' or not line):
                 bot.send_message(message.chat.id, '_______________________________________________')
             else:
                  bot.send_message(message.chat.id, line[:400])
@@ -33,7 +33,7 @@ def shrek_2_message(message):
         text = f.read()
         for line in text.splitlines():
             time.sleep(.18)
-            if(line == ''or line == '\n'):
+            if(line == ''or line == '\n'or not line):
                 bot.send_message(message.chat.id, '_______________________________________________')
             else:
                  bot.send_message(message.chat.id, line[:400])
@@ -46,7 +46,7 @@ def shrek_3_message(message):
         text = f.read()
         for line in text.splitlines():
             time.sleep(.18)
-            if(line == ''or line == '\n'):
+            if(line == ''or line == '\n'or not line):
                 bot.send_message(message.chat.id, '_______________________________________________')
             else:
                  bot.send_message(message.chat.id, line[:400])
@@ -59,7 +59,7 @@ def shrek_4_message(message):
         text = f.read()
         for line in text.splitlines():
             time.sleep(.18)
-            if(line == ''or line == '\n'):
+            if(line == ''or line == '\n'or not line):
                 bot.send_message(message.chat.id, '_______________________________________________')
             else:
                  bot.send_message(message.chat.id, line[:400])
