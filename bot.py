@@ -58,7 +58,7 @@ def shrek_4_message(message):
     with open('shrek_4.txt', encoding='utf-8') as f:
         text = f.read()
         for line in text.splitlines():
-            time.sleep(.18)
+            time.sleep(.2)
             if(line == ''or line == '\n'or not line):
                 bot.send_message(message.chat.id, '_______________________________________________')
             else:
