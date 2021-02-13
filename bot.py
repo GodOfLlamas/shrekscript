@@ -1,6 +1,5 @@
 import telebot
 import time
-import schedule
 
 bot = telebot.TeleBot('1604683875:AAEPAQ5nODdlfoDJnb5XscKEuBrMFO4gR2U')
 
@@ -10,10 +9,6 @@ keyboard1.row('/Шрек_1', '/Шрек_2', '/Шрек_3', '/Шрек_4')
 @bot.message_handler(commands=['start'])
 def start_message(message):
     bot.send_message(message.chat.id, 'Привет, мои огрята', reply_markup=keyboard1)
-
-
-t_end = time.time() + 17
-
 
 
 @bot.message_handler(commands=['Шрек_1'])
